@@ -40,7 +40,7 @@ Part3/
 ├── config.yaml           # 项目配置
 └── requirements.txt      # 依赖文件
 
----text
+```
 
 ## 部署指南
 
@@ -49,27 +49,33 @@ Python 3.10 及以上
 pip
 ffmpeg
 2. 安装依赖
+```
 pip install -r requirements.txt
+
+```
 3. 配置文件
 
 项目配置文件为：
-
+```
 config.yaml
-
+```
 根据实际环境补充或修改所需的模型、ASR、TTS、问答接口配置。
 
 4. 启动服务
+```
 python main.py
-
+```
 或使用 uvicorn 启动：
-
+```
 uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+```
 5. 访问地址
 
 服务启动后可通过以下地址访问：
-
+```
 Swagger UI: http://127.0.0.1:8000/docs
 OpenAPI JSON: http://127.0.0.1:8000/openapi.json
+```
 6. 接口测试
 
 项目支持通过 Swagger UI 直接进行接口测试：
