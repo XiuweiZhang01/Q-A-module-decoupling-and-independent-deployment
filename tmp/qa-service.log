@@ -1,0 +1,13 @@
+2026-03-27 09:01:59 - 0.9.2_00000000000000 - core.providers.vad.silero - INFO - core.providers.vad.silero - SileroVAD
+2026-03-27 09:02:00 - 0.9.2_00000000000000 - services.module_loader - INFO - services.module_loader - 初始化组件: vad 成功 -> SileroVAD (silero)
+2026-03-27 09:02:11 - 0.9.2_00000000000000 - core.providers.asr.fun_local - INFO - core.providers.asr.fun_local - funasr version: 1.2.7.
+2026-03-27 09:02:11 - 0.9.2_00000000000000 - services.module_loader - INFO - services.module_loader - 初始化组件: asr 成功 -> FunASR (fun_local)
+2026-03-27 09:02:11 - 0.9.2_00000000000000 - core.providers.llm.openai.openai - ERROR - core.providers.llm.openai.openai - 配置错误: LLM 的 API key 未设置,当前值为: 你的chat-glm web key
+2026-03-27 09:02:11 - 0.9.2_00000000000000 - services.module_loader - INFO - services.module_loader - 初始化组件: llm 成功 -> ChatGLMLLM (openai)
+2026-03-27 09:18:05 - 0.9.2_00000000000000 - core.providers.vad.silero - INFO - core.providers.vad.silero - SileroVAD
+2026-03-27 09:18:05 - 0.9.2_00000000000000 - services.module_loader - INFO - services.module_loader - 初始化组件: vad 成功 -> SileroVAD (silero)
+2026-03-27 09:18:13 - 0.9.2_00000000000000 - core.providers.asr.fun_local - INFO - core.providers.asr.fun_local - funasr version: 1.2.7.
+2026-03-27 09:18:13 - 0.9.2_00000000000000 - services.module_loader - INFO - services.module_loader - 初始化组件: asr 成功 -> FunASR (fun_local)
+2026-03-27 09:18:13 - 0.9.2_00000000000000 - services.module_loader - INFO - services.module_loader - 初始化组件: llm 成功 -> DeepSeekLLM (openai)
+2026-03-27 09:18:13 - 0.9.2_00000000000000 - services.module_loader - INFO - services.module_loader - 初始化组件: tts 成功 -> EdgeTTS (edge)
+2026-03-27 09:18:13 - 0.9.2_00000000000000 - services.module_loader - INFO - services.module_loader - 四个核心模块初始化完成
