@@ -1,8 +1,7 @@
 # Q-A-module-decoupling-and-independent-deployment
 Phase 3 independent QA service based on FastAPI, supporting text chat, audio chat and audio-tts
 # Part3 Xiaozhi QA Service
-# 基于 FastAPI 的独立问答服务项目，用于完成第三阶段“问答模块解耦与服务独立部署”任务。
-# 项目目标包括提取并独立部署语音问答核心逻辑，提供支持文本/语音问答的 REST API，并补充接口文档、Postman 示例和性能测试。:contentReference[oaicite:0]{index=0}
+基于 FastAPI 的独立问答服务项目，用于完成第三阶段“问答模块解耦与服务独立部署”任务。项目目标包括提取并独立部署语音问答核心逻辑，提供支持文本/语音问答的 REST API，并补充接口文档、Postman 示例和性能测试。:contentReference[oaicite:0]{index=0}
 
 ---
 
@@ -40,3 +39,41 @@ Part3/
 ├── main.py               # 服务启动入口
 ├── config.yaml           # 项目配置
 └── requirements.txt      # 依赖文件
+
+---text
+
+## 部署指南
+
+# 1. 环境要求
+Python 3.10 及以上
+pip
+ffmpeg
+2. 安装依赖
+pip install -r requirements.txt
+3. 配置文件
+
+项目配置文件为：
+
+config.yaml
+
+根据实际环境补充或修改所需的模型、ASR、TTS、问答接口配置。
+
+4. 启动服务
+python main.py
+
+或使用 uvicorn 启动：
+
+uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+5. 访问地址
+
+服务启动后可通过以下地址访问：
+
+Swagger UI: http://127.0.0.1:8000/docs
+OpenAPI JSON: http://127.0.0.1:8000/openapi.json
+6. 接口测试
+
+项目支持通过 Swagger UI 直接进行接口测试：
+
+文本接口：直接输入文本参数进行测试
+音频接口：上传音频文件进行测试
+音频 + TTS 接口：上传音频文件并验证返回结果
